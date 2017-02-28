@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>talking with api</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<style>
+	form {
+		display:inline-block;
+	}
+	</style>
+</head>
+<body>
+    <form id="add" action="http://localhost:8080/addUser" method="post">
+	<h1>add user</h1>
+        Name:    <br>   <input type="text" name="name" value="">  <br>
+        Password:<br>   <input type="text" name="password" value=""> <br>
+                 <br>   <input type="submit" value="Submit">
+    </form>
+    <form id="delete" action="http://localhost:8080/deleteUser" method="post">
+	<h1>delete user</h1>
+        Name:    <br>   <input type="text" name="name" value="">  <br>
+        Password:<br>   <input type="text" name="password" value=""> <br>
+        <br>   <input type="submit" value="Submit">
+    </form>
+    <form id="update" action="http://localhost:8080/updateUser" method="post">
+	<h1>update user</h1>
+        Name:    <br>   <input type="text" name="name" value="">  <br>
+        Password:<br>   <input type="text" name="password" value=""> <br>
+        <br>   <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
